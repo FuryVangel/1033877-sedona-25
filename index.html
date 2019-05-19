@@ -30,10 +30,46 @@
   		<section class="search">
   			<h2>Заинтересовались?</h2>
   			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-  			<a class="hotel-search" href="#">Поиск гостиниц в Седоне</a>
   		</section>
-  		<section class="search-form">
-  			<!-- Здесь будет форма -->
+  		<section class="search-info">
+  			<h2>
+  				<a class="hotel-search" href="#">Поиск гостиниц в Седоне</a>
+  			</h2>
+  			<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+  				<div class="data-select">
+  					<label for="check-in">Дата заезда:</label>
+  					<input class="data-field" type="text" id="check-in" name="check-in" placeholder="24 апреля 2017" required>
+  					<button type="button" class="btn-calendar">Календарь
+  						<img src="img/calendar.svg" alt="Календарь">
+  					</button>
+  				</div>
+  				<div class="data-select">
+  					<label for="check-out">Дата выезда:</label>
+  					<input class="data-field" type="text" id="check-out" name="check-out" placeholder="4 июля 2017" required>
+  					<button type="button" class="btn-calendar">Календарь
+  						<img src="img/calendar.svg" alt="Календарь">
+  					</button>
+  				</div>
+					<div class="data-select">
+						<div class="number-select">
+							<label for="adults">Взрослые:</label>
+							<div class="number">
+								<button class="nmb-btn nmb-btn-minus">Минус</button>
+								<input class="number-field" type="text" id="adults" name="adults" placeholder="2" required>
+								<button class="nmb-btn nmb-btn-pls">Плюс</button>
+							</div>
+						</div>
+						<div class="number-select">
+							<label for="kids">Дети:</label>
+							<div class="number">
+								<button class="nmb-btn nmb-btn-minus">Минус</button>
+								<input class="number-field" type="text" id="kids" name="kids" placeholder="0">
+								<button class="nmb-btn nmb-btn-pls">Плюс</button>
+							</div>
+						</div>
+					</div>
+					<button class="find-btn" type="submit">Найти</button>
+  			</form>
   		</section>
   	</main>
   	<footer class="main-footer">
