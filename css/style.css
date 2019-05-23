@@ -26,15 +26,15 @@ a {
 
 .site-navigation a:hover, 
 .site-navigation a:focus {
-	background-color: #81b3d2;
+	color: #81b3d2;
 }
 
 .site-navigation a:active {
-	background-color: #cacaca;
+	color: #cacaca;
 }
 
-.active-page {
-	background-color: #766357;
+.active-page a {
+	color: #766357;
 }
 
 .sedona-about {
@@ -95,11 +95,11 @@ a {
 
 .catalog-item-title:hover,
 .catalog-item-title:focus {
-	background-color: #81b3d2;
+	color: #81b3d2;
 }
 
 .catalog-item-title:active {
-	background-color: #cacaca;
+	color: #cacaca;
 }
 
 .hotel-rate-title {
@@ -183,13 +183,13 @@ a {
 	text-align: right;
 }
 
-.footer-copyright a:hover,
-.footer-copyright a:focus {
-	background-color: #81b3d2;
+.copyright:hover,
+.copyright:focus {
+	fill: : #81b3d2;
 }
 
-.footer-copyright a:active {
-	background-color: #cacaca;
+.copyrigh:active {
+	fill: #cacaca;
 }
 
 .social-button {
