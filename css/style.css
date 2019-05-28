@@ -1,6 +1,8 @@
 body {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
+
+	width: 1200px;
 
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
@@ -16,11 +18,36 @@ a {
 	text-decoration: none;
 }
 
+.main-navigation {
+	display: flex;
+	justify-content: space-between;
+	
+	max-height: 57px;
+
+	/*Временно для сетки*/
+	background-color: #f2f2f2;
+}
+
+.main-header-logo {
+	width: 140px;
+	height: 72px;
+}
+
 .site-navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin: 0 auto;
+	
+	/*Временно для сетки*/
+	width: 800px;
+	background-color: #cccccc;
+
 	list-style: none;
 }
 
-.site-navigation a {
+.site-navigation a{
 	color: #000000;
 }
 
@@ -37,6 +64,13 @@ a {
 	color: #766357;
 }
 
+.intro img {
+	width: 1200px;
+	height: 510px;
+	margin: 0 auto;
+	display: block; 
+}
+
 .sedona-about {
 	text-align: center;
 }
@@ -51,6 +85,9 @@ a {
 	font-weight: 400;
 	color: #333333;
 
+	margin-top: 39px;
+	margin-bottom: 57px;
+
 	background-color: #ffffff;
 }
 
@@ -63,6 +100,9 @@ a {
 	line-height: 36px;
 	font-weight: 700;
 	color: #000000;
+
+	margin-top: 58px;
+	margin-bottom: 39px;
 }
 
 .search p {
@@ -70,16 +110,41 @@ a {
 	line-height: 24px;
 	font-weight: 400;
 	color: #333333;
+
+	margin-bottom: 55px;
 }
 
 .search-info {
 	display: none;
 }
 
-.catalog-item {
-	list-style: none;
+.hotel-rate {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 
-	background-color: #fefefe;
+	margin-left: auto; 
+
+	width: 110px;
+	background-color: yellow;
+}
+
+.catalog-item {
+	min-height: 152px;
+
+
+	border-bottom: 1px solid #e5e5e5;
+	list-style: none;
+}
+
+.catalog-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+	margin: 0;
+
+	background-color: #ddd;
 }
 
 .catalog-item h3 {
@@ -107,8 +172,6 @@ a {
 	line-height: 21px;
 	font-weight: 400;
 	color: #666666;
-
-	text-align: right;
 }
 
 .hotel-info-title,
@@ -159,7 +222,15 @@ a {
 .main-footer {
 	color: #000000;
 
-	background-color: #fefefe;
+	/*Временно для сетки*/
+	background-color: #ccc;
+
+	margin: 0 auto;
+	min-height: 120px;
+	
+	display: flex;	
+	justify-content: space-between;
+	align-items: center;
 }
 
 .hashtag {
@@ -167,11 +238,23 @@ a {
 	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
+
+	margin: 0 auto;
+	padding-left: 130px;
 }
 
 .footer-social {
-	text-align: center;
 	list-style: none;
+
+	display: flex;
+	justify-content: space-between;
+	margin-left: 0 auto;
+    padding-left: 256px;
+	padding-right: 226px;
+}
+
+.footer-social li {
+    padding-right: 5px;
 }
 
 .footer-social a {
@@ -180,12 +263,13 @@ a {
 
 .footer-copyright {
 	font-weight: 400;
-	text-align: right;
+	margin: 0 auto;
+	padding-right: 100px;
 }
 
 .copyright:hover,
 .copyright:focus {
-	fill: : #81b3d2;
+	fill: #81b3d2;
 }
 
 .copyrigh:active {
@@ -194,6 +278,13 @@ a {
 
 .social-button {
 	background-color: #81b3d2;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 46px;
+	height: 48px;
 }
 
 .social-button:hover,
