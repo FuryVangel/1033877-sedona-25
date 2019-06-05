@@ -155,7 +155,6 @@ img {
     padding: 30px 140px;
     color: white;
     background-color: #766357;
-    
 }
 
 .hotel-search:hover {
@@ -183,6 +182,8 @@ img {
     margin: 0 auto;
     text-transform: uppercase;
     font: inherit;
+    -webkit-box-sizing: border-box;
+    		box-sizing: border-box;
 }
 
 .search-form input[type="text"] {
@@ -190,8 +191,7 @@ img {
     text-align: left;
     padding-left: 10px;
     margin-bottom: 30px;
-    margin-left: 16px;
-    box-sizing: border-box;   
+    margin-left: 16px;  
 }
 
 .check-in {
@@ -199,6 +199,7 @@ img {
 }
 
 .search-form input[type="number"] {
+	position: relative;
     width: 117px;
     text-align: center;
     padding: 0;
@@ -271,6 +272,7 @@ input[type="number"]::-webkit-outer-spin-button {
     color: #a9a9a9;
     font-weight: bold;
     padding: 0;
+    margin: 0;
     z-index: 6;
     top: 287px; 
 }
@@ -556,6 +558,6 @@ input[type="number"]::-webkit-outer-spin-button {
 	fill: #81b3d2;
 }
 
-.copyrigh:active path {
+.copyright:active path {
 	fill: #bdbbbc;
 }
