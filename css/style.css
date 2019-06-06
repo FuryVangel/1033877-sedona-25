@@ -199,15 +199,16 @@ img {
 }
 
 .search-form input[type="number"] {
-	position: relative;
-    width: 117px;
+    width: 38px;
     text-align: center;
+    margin: 0;
     padding: 0;
 }
 
 .data-select-1 {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .number-select {
@@ -216,12 +217,6 @@ img {
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 54px;
-}
-
-.kids {
-	position: relative;
-	padding: 0;
-	padding-left: 53px;
 }
 
 input[type="number"] {
@@ -265,21 +260,27 @@ input[type="number"]::-webkit-outer-spin-button {
 	fill: #81b3d2;
 }
 
+.kids {
+	margin-left: 53px;
+}
+
+.number {
+	display: flex;
+	justify-content: space-between;
+}
+
 .nmb-btn {
-	position: absolute;
+	text-align: center;
+	width: 38px;
+	height: 38px;
 	border: none;
     background-color: transparent;
     color: #a9a9a9;
     font-weight: bold;
-    padding: 0;
+    font-size: 26px;
     margin: 0;
-    z-index: 6;
-    top: 287px; 
-}
-
-.nmb-btn-minus {
-	margin-left: 16px;
-}
+    background-color: #f2f2f2;
+ }
 
 .nmb-btn-minus:hover {
     color: black;
@@ -289,10 +290,6 @@ input[type="number"]::-webkit-outer-spin-button {
 .nmb-btn-minus:active {
     color: #81b3d2;
     border: none;
-}
-
-.nmb-btn-pls {
-	margin-left: -20px;
 }
 
 .nmb-btn-pls:hover {
