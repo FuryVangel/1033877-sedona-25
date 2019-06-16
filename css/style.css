@@ -1,17 +1,15 @@
 body {
 	margin: 0 auto;
 	padding: 0;
-
 	width: 1200px;
-
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
-
-	background-color: #ffffff;
+	background-color: #fff;
+	position: relative;
 }
 
 a {
@@ -254,7 +252,7 @@ img {
 .hotel-search {
 	position: relative;
 	display: block;
-  padding: 30px 139px;
+  padding: 30px 138px;
   color: white;
   background-color: #766357;
 }
@@ -927,12 +925,18 @@ input[type="checkbox"]:checked + .checkbox-indicator::before:hover {
 .main-footer {
 	margin: 0 auto;
 	padding: 0;
-	display: flex;	
+	display: flex;
+	width: 1200px;
 	justify-content: space-between;
 	align-items: center;
 	min-height: 120px;
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.9);
 } 
+
+.footer-map {
+	position: absolute;
+	bottom: 0;
+}
 
 .hashtag {
 	display: block;
@@ -949,7 +953,6 @@ input[type="checkbox"]:checked + .checkbox-indicator::before:hover {
 	padding: 0;
   margin-left: 256px;
   margin-right: 229px;
-
 	list-style: none;
 }
 
@@ -959,7 +962,6 @@ input[type="checkbox"]:checked + .checkbox-indicator::before:hover {
 	align-items: center;
 	width: 46px;
 	height: 48px;
-
 	background-color: #81b3d2;
 }
 
