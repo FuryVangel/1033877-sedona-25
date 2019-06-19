@@ -6,9 +6,9 @@ body {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 700;
-	color: #000000;
+	color: #333;
+	background-color: #f2f2f2;
 	text-transform: uppercase;
-	background-color: #fff;
 	position: relative;
 }
 
@@ -22,6 +22,7 @@ img {
 }
 
 .body-wrapper {
+	background-color: #fff;
   -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 		box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
@@ -158,8 +159,7 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-left: 10px;
-  flex-grow: 1;
+  padding: 0;
 }
 
 .recomend {
@@ -168,9 +168,6 @@ img {
 }
 
 .recomend-title {
-	font-weight: 21px;
-	line-height: 21px
-	padding-top: 35px;
   padding-bottom: 5px;
 }
 
@@ -178,12 +175,11 @@ img {
 	line-height: 21px;
 	font-weight: 400;
 	width: 290px;
-  text-align: center;
   margin: 0 auto;
 }
 
 .recomend-icon {
-	padding-top: 60px;
+	padding-top: 58px;
 }
 
 .attraction {
@@ -192,16 +188,17 @@ img {
 }
 
 .attraction-title {
-	padding-top: 43px;
-  padding-bottom: 17px;
+	padding-top: 46px;
+  padding-bottom: 25px;
   width: 123px;
   margin: 0 auto;
+  line-height: 21px;
 }
 
 .attraction-text {
 	font-weight: 400;
 	line-height: 21px;
-	padding-top: 23px;
+	padding-top: 21px;
   width: 268px;
   margin: 0 auto;
 }
@@ -221,7 +218,7 @@ img {
 	color: #000000;
 	margin: 0 auto;
 	padding-top: 50px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
  }
 
 .search p {
@@ -231,7 +228,7 @@ img {
 	font-weight: 400;
 	color: #333333;
 	margin: 0 auto;
-	margin-bottom: 45px;
+	margin-bottom: 46px;
 }
 
 .search-info {
@@ -289,9 +286,9 @@ img {
   min-width: 346px;
   text-align: left;
   padding: 0;
-  padding-left: 10px;
+  padding-left: 12px;
   margin: 0;
-  margin-right: 0;
+  margin-left: 16px;
 }
 
 .search-form input[type="number"] {
@@ -303,15 +300,10 @@ img {
 
 .data-select {
 	position: relative;
-	display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 	align-items: center;
-	margin-bottom: 30px; 
+	margin-bottom: 30px;
 }
 
 .data-select-1 {
@@ -354,7 +346,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-right: 0px;
   padding-right: 0px;
   right: 9px;
-  bottom: 8px;
+  bottom: 7px;
 }
 
 .calendar {
@@ -438,121 +430,91 @@ input[type="number"]::-webkit-outer-spin-button {
 	background-color: #425460;
   background-image: url(../img/sedona-hotels.jpg);
   background-repeat: no-repeat;
-  min-height: 218px;
-  display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+  height: 218px;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
 }
 
 .filter-form {
   font-size: 16px;
-  display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   font-weight: bold;
   color: white;
-   -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  align-items: center;
   padding-top: 0px;
   padding-bottom: 0px;
 }
 
+.infrastructure {
+  margin-right: 116px;
+  margin-left: 73px;
+}
+
 .filter-form fieldset {
+  padding: 0;
   border: 0px;
 }
 
-.infrastructure {
-  margin-top: 0px;
-  margin-left: 16px;
-  padding-bottom: 23px;
-  margin-bottom: -48px;
-}
-
 .legend {
-  padding-left: 45px;
-  padding-bottom: -4px;
+  margin-bottom: 24px;
 }
 
 .filter {
+  padding: 0;
+  margin: 0;
   list-style-type: none;
 }
 
 .filter-option {
-  margin-bottom: 28px;
-  margin-left: 40px;
+  padding-left: 40px;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  line-height: 21px;
 }
 
-.accomodation {
-	margin-top: 0px;
-  margin-left: 50px;
-  padding-bottom: 23px;
-  margin-bottom: -48px;
+.filter li:first-child {
+  margin-bottom: 27px;
+  position: relative;
+  bottom: 4px;
 }
 
-input[type="checkbox"] + .checkbox-indicator::before {
+.filter li:nth-child(2) {
+  margin-bottom: 24px;
+  position: relative;
+  bottom: 5px;
+}
+
+.filter li:last-child {
+  position: relative;
+  bottom: 5px;
+}
+
+.filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  background-image: url(../img/checkbox-off.svg);
-  width: 23px;
-  height: 23px;
-  margin-left: -35px;
-  margin-top: -1px;
+  background-image:url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
-  padding-left: 13px;
+  width: 28px;
+  height: 23px;
+  left: -40px;
 }
 
-input[type="checkbox"] + .checkbox-indicator::before:hover {
+input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
-  background-image: url(../img/checkbox-off.svg);
-  width: 23px;
-  height: 23px;
-  margin-left: -35px;
-  margin-top: -1px;
+  background-image:url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
-  padding-left: 13px;
-  cursor: pointer;
-}
-
-input[type="checkbox"]:checked + .checkbox-indicator::before {
-  content: "";
-  position: absolute;
-  background-image: url(../img/checkbox-on.svg);
-  width: 23px;
+  width: 28px;
   height: 23px;
-  margin-left: -35px;
-  margin-top: -1px;
-  background-repeat: no-repeat;
-  padding-left: 13px;
-}
-
-input[type="checkbox"]:checked + .checkbox-indicator::before:hover {
-  content: "";
-  position: absolute;
-  background-image: url(../img/checkbox-on.svg);
-  width: 23px;
-  height: 23px;
-  margin-left: -35px;
-  margin-top: -1px;
-  background-repeat: no-repeat;
-  padding-left: 13px;
-  cursor: pointer;
+  left: -40px;
 }
 
 .checkbox + label {
@@ -564,9 +526,9 @@ input[type="checkbox"]:checked + .checkbox-indicator::before:hover {
   margin: 50px auto;
   color: #fff;
   text-transform: uppercase;
-  margin-left: 332px;
+  margin-left: 345px;
+  margin-right: 80px;
   margin-top: -28px;
-  padding-bottom: -10px;
   margin-bottom: -20px;
 }
 
@@ -579,7 +541,7 @@ input[type="checkbox"]:checked + .checkbox-indicator::before:hover {
 
 .price-controls {
   position: relative;
-  height: 36px;
+  height: 34px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #fff;
@@ -608,7 +570,7 @@ input[type="checkbox"]:checked + .checkbox-indicator::before:hover {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
+  width: 80px;
   padding-left: 65px;
 }
 
@@ -670,7 +632,8 @@ input[type="checkbox"]:checked + .checkbox-indicator::before:hover {
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  margin-left: 87px;
+  padding: 6px 33px;
   font-size: 14px;
   line-height: 20px;
   color: #fff;
@@ -690,7 +653,7 @@ input[type="checkbox"]:checked + .checkbox-indicator::before:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 86px;
+  height: 86px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -719,6 +682,7 @@ input[type="checkbox"]:checked + .checkbox-indicator::before:hover {
   margin-left: 40px;
   padding-left: 0;
   list-style: none;
+  padding-top: 3px;
 }
 
 .sorting-type:hover {
@@ -788,7 +752,7 @@ input[type="checkbox"]:checked + .checkbox-indicator::before:hover {
 .catalog-item-image {
 	margin-left: 73px;
 	margin-top: 31px;
-	margin-bottom: 20px;
+	margin-bottom: 21px;
 	padding: 0 auto;	
 }
 
@@ -929,13 +893,14 @@ input[type="checkbox"]:checked + .checkbox-indicator::before:hover {
 	width: 1200px;
 	justify-content: space-between;
 	align-items: center;
-	min-height: 120px;
+	height: 120px;
 	background-color: rgba(255, 255, 255, 0.9);
 } 
 
 .footer-map {
 	position: absolute;
 	bottom: 0;
+	margin-bottom: 8px;
 }
 
 .hashtag {
