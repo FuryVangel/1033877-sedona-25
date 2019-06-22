@@ -249,7 +249,7 @@ img {
 .hotel-search {
 	position: relative;
 	display: block;
-  padding: 30px 138px;
+  padding: 30px 135px;
   color: white;
   background-color: #766357;
 }
@@ -265,7 +265,8 @@ img {
 
 .search-form {
 	position: absolute;
-	width: 459px;
+	z-index: 9;
+	width: 460px;
   padding: 55px;  
   box-shadow: 0 7px 15px rgba(0,1,1,0.15);
   background-color: white;
@@ -296,6 +297,30 @@ img {
   text-align: center;
   margin: 0;
   padding: 0;
+}
+
+.search-form-hidden {
+	display: none;
+ 	animation: 0.6s forwards;
+}
+
+.search-form-show {
+	animation: 0.6s forwards;
+}
+	
+.modal {
+	animation-name: move;
+	animation-duration: 1s;
+}
+
+@keyframes move {
+	from {
+    transform: translateY(-90px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
 }
 
 .data-select {
@@ -896,6 +921,13 @@ input[type="checkbox"]:checked + label::after {
 	height: 120px;
 	background-color: rgba(255, 255, 255, 0.9);
 } 
+
+.map {
+	position: relative;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+	min-height: 593px;
+}
 
 .footer-map {
 	position: absolute;
