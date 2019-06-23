@@ -248,6 +248,7 @@ img {
 
 .hotel-search {
 	position: relative;
+  z-index: 11;
 	display: block;
   padding: 30px 135px;
   color: white;
@@ -305,14 +306,10 @@ img {
 }
 
 .search-form-show {
-	animation: 0.6s forwards;
+  animation-name: move;
+  animation-duration: 1s;
 }
 	
-.modal {
-	animation-name: move;
-	animation-duration: 1s;
-}
-
 @keyframes move {
 	from {
     transform: translateY(-90px);
@@ -321,6 +318,17 @@ img {
   to {
     transform: translateY(0px);
   }
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
+@keyframes shake {
+  0%, 100%                { transform: translateX(0);  }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80%      { transform: translateX(10px); }
 }
 
 .data-select {
