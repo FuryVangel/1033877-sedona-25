@@ -947,7 +947,6 @@ input[type="number"]::-webkit-outer-spin-button {
 .footer-map {
 	position: absolute;
 	bottom: 0;
-	margin-bottom: 8px;
 }
 
 .hashtag {
