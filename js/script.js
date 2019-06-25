@@ -3,22 +3,17 @@ var searchForm = document.querySelector(".search-form");
 var checkIn = searchForm.querySelector("[name=check-in]");
 var checkOut = searchForm.querySelector("[name=check-out]");
 var adults = searchForm.querySelector("[name=adults]");
-var kids = searchForm.querySelector("[name=kids]");
-               
+var kids = searchForm.querySelector("[name=kids]");  
 
-  if (searchButton) {
-    if (searchForm) {
-      searchForm.classList.add("search-form-show");
-    };               
-    searchButton.addEventListener("click", function (evt) {
-    evt.preventDefault(); 
-    searchForm.classList.toggle("search-form-show");
+searchButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    searchForm.classList.add("search-form-show");
     searchForm.classList.toggle("search-form-hidden");
-    searchForm.classList.remove("modal-error");                  
-     });
-  };
+    searchForm.classList.remove("modal-error");
+  });
 
-  searchForm.addEventListener("submit", function (evt) {
+    
+   searchForm.addEventListener("submit", function (evt) {
     if (!checkIn.value || !checkOut.value || !adults.value) {
     evt.preventDefault();
     searchForm.classList.add("modal-error");       
