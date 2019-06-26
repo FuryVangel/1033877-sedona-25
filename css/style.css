@@ -359,11 +359,14 @@ img {
 
 input[type="number"] {
   -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -906,7 +909,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .button-selection:active {
 	background-color: #5496bd;
-	color: rgb(255,255,255, 0.3);
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .button-color {
@@ -923,7 +926,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .button-color:active {
 	background-color: #503e33;
-	color: rgb(255,255,255, 0.3);
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .main-footer {

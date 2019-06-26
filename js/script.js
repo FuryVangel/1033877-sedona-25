@@ -5,10 +5,12 @@ var checkOut = searchForm.querySelector("[name=check-out]");
 var adults = searchForm.querySelector("[name=adults]");
 var kids = searchForm.querySelector("[name=kids]");  
 
+searchForm.classList.add("search-form-hidden");
+
 searchButton.addEventListener("click", function (evt) {
     evt.preventDefault();
-    searchForm.classList.add("search-form-show");
     searchForm.classList.toggle("search-form-hidden");
+    searchForm.classList.toggle("search-form-show");
     searchForm.classList.remove("modal-error");
   });
 
